@@ -30,6 +30,7 @@ Phase 1 artifacts:
 
 - Technical appendix: [`docs/phase-1-technical-appendix.md`](docs/phase-1-technical-appendix.md)
 - Report summary: [`eval_pipeline/reports/0.6b_vs_1.7b_vs_4b/summary.md`](eval_pipeline/reports/0.6b_vs_1.7b_vs_4b/summary.md)
+- Product mastery quiz: [`docs/innerloop-product-quiz.html`](docs/innerloop-product-quiz.html)
 - TestFlight checklist: [`docs/testflight-release.md`](docs/testflight-release.md)
 
 ## Project Layout
