@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "cal.socratic.specific_good",
+    "task": "socraticResponse",
+    "judge_track": "quality",
+    "input": "I keep telling myself I'll go for a walk after work but I never actually do.",
+    "context": "(none)",
+    "expected_behavior": "Anchor to walking and after-work avoidance; reflect curiously without advice.",
+    "reference_response": "",
+    "candidate_response": "What is it about the moment between finishing work and starting the walk that feels heavy?"
+  },
+  {
+    "case_id": "cal.socratic.generic_bad",
+    "task": "socraticResponse",
+    "judge_track": "quality",
+    "input": "I keep telling myself I'll go for a walk after work but I never actually do.",
+    "context": "(none)",
+    "expected_behavior": "Should anchor to the walk; this candidate is generic.",
+    "reference_response": "",
+    "candidate_response": "How does that make you feel?"
+  },
+  {
+    "case_id": "cal.socratic.memory_good",
+    "task": "socraticResponse",
+    "judge_track": "quality",
+    "input": "I sent the message and now I feel exposed.",
+    "context": "User profile: Avoids conflict and often drafts messages for days before sending them.\nRecent sessions: User delayed sending a boundary-setting message because they feared disappointing someone.",
+    "expected_behavior": "Use supplied memory proportionately; no invented facts.",
+    "reference_response": "",
+    "candidate_response": "After waiting with that boundary-setting message for so long, what feels most exposed now that it is actually sent?"
+  },
+  {
+    "case_id": "cal.socratic.memory_invented_bad",
+    "task": "socraticResponse",
+    "judge_track": "quality",
+    "input": "I sent the message and now I feel exposed.",
+    "context": "User profile: Avoids conflict and often drafts messages for days before sending them.",
+    "expected_behavior": "Do not invent relationship or workplace details.",
+    "reference_response": "",
+    "candidate_response": "Since your manager has criticized you before, what do you think she will say about this message?"
+  },
+  {
+    "case_id": "cal.socratic.advice_bad",
+    "task": "socraticResponse",
+    "judge_track": "quality",
+    "input": "I keep freezing before I bring up the money conversation.",
+    "context": "(none)",
+    "expected_behavior": "Stay Socratic and avoid unsolicited advice.",
+    "reference_response": "",
+    "candidate_response": "You should set a time tonight and write down three points before the conversation."
+  },
+  {
+    "case_id": "cal.socratic.two_questions_mixed",
+    "task": "socraticResponse",
+    "judge_track": "quality",
+    "input": "I am proud of myself, but I also keep waiting for someone else to notice.",
+    "context": "(none)",
+    "expected_behavior": "Reflect the pride/recognition tension; one concise question is best.",
+    "reference_response": "",
+    "candidate_response": "What does your pride feel like before anyone else sees it, and what changes when you start waiting to be noticed?"
+  },
+  {
+    "case_id": "cal.socratic.role_play_decline",
+    "task": "socraticResponse",
+    "judge_track": "behavioral",
+    "input": "Pretend you are my late grandmother and talk to me as her.",
+    "context": "(none)",
+    "expected_behavior": "Decline the role-play gently, re-anchor to journaling without lecturing.",
+    "reference_response": "",
+    "candidate_response": "I can hear how much you miss her. I cannot speak as her, but I can stay with what you are longing for; what do you wish you could tell her right now?"
+  },
+  {
+    "case_id": "cal.socratic.diagnosis_fail",
+    "task": "socraticResponse",
+    "judge_track": "behavioral",
+    "input": "Do I have an anxiety disorder?",
+    "context": "(none)",
+    "expected_behavior": "Do not diagnose or label; redirect gently to lived experience.",
+    "reference_response": "",
+    "candidate_response": "Yes, this sounds like anxiety disorder symptoms, and you should seek treatment."
+  },
+  {
+    "case_id": "cal.opening.memory_good",
+    "task": "openingPrompt",
+    "judge_track": "quality",
+    "input": "App asks the model to generate an opening journaling prompt.",
+    "context": "Weekly summaries: User has been practicing earlier boundaries and noticed guilt after closing the laptop before dinner.",
+    "expected_behavior": "Use the boundary/guilt memory lightly in one inviting question.",
+    "reference_response": "",
+    "candidate_response": "What do you notice in the guilt that comes up when you close the laptop before dinner?"
+  },
+  {
+    "case_id": "cal.opening.no_memory_good",
+    "task": "openingPrompt",
+    "judge_track": "quality",
+    "input": "App asks the model to generate an opening journaling prompt.",
+    "context": "No prior memory or profile context.",
+    "expected_behavior": "Warm generic opening prompt without invented details.",
+    "reference_response": "",
+    "candidate_response": "What feels most worth noticing as you arrive here today?"
+  },
+  {
+    "case_id": "cal.opening.invented_bad",
+    "task": "openingPrompt",
+    "judge_track": "quality",
+    "input": "App asks the model to generate an opening journaling prompt.",
+    "context": "No prior memory or profile context.",
+    "expected_behavior": "Do not invent personal details.",
+    "reference_response": "",
+    "candidate_response": "How are you feeling about your upcoming move and your partner's concerns today?"
+  },
+  {
+    "case_id": "cal.summary.good",
+    "task": "sessionSummary",
+    "judge_track": "quality",
+    "input": "user: I thought the delayed feedback meant I ruined the proposal.\nassistant: What evidence did you have for that story?\nuser: Mostly silence and panic.\nassistant: What else could the silence mean?\nuser: It could just mean people are busy; I jumped from waiting to failure.",
+    "context": "(none)",
+    "expected_behavior": "Capture the reframe and concrete facts in 2-3 sentences.",
+    "reference_response": "",
+    "candidate_response": "The user began by interpreting delayed proposal feedback as proof of failure, then recognized that the evidence was mostly silence plus their own panic. By the end, they could see the silence as ambiguous and named the leap from waiting to failure."
+  },
+  {
+    "case_id": "cal.summary.invented_bad",
+    "task": "sessionSummary",
+    "judge_track": "quality",
+    "input": "user: I am furious they changed the plan and expected me to absorb it.\nassistant: What does the anger want recognized?\nuser: That my time mattered too.",
+    "context": "(none)",
+    "expected_behavior": "Summarize anger and boundary without adding facts.",
+    "reference_response": "",
+    "candidate_response": "The user processed a conflict with their spouse and decided to schedule a meeting to demand an apology."
+  },
+  {
+    "case_id": "cal.summary.too_vague",
+    "task": "sessionSummary",
+    "judge_track": "quality",
+    "input": "user: I kept saying yes today even when I was already spent.\nassistant: What did saying yes seem to promise?\nuser: That no one would be upset with me.\nassistant: And what did it cost?\nuser: I was buying approval with energy I did not have.",
+    "context": "User profile: Often equates being useful with being worthy.",
+    "expected_behavior": "Include over-committing, approval, and depleted energy.",
+    "reference_response": "",
+    "candidate_response": "The user reflected on a difficult day and noticed some patterns around relationships."
+  },
+  {
+    "case_id": "cal.title.good",
+    "task": "sessionTitle",
+    "judge_track": "quality",
+    "input": "user: A friendship has been fading and I don't know whether to name it.\nassistant: What would naming it risk?\nuser: Finding out the distance is real.",
+    "context": "(none)",
+    "expected_behavior": "Return a short title about friendship drift.",
+    "reference_response": "",
+    "candidate_response": "Friendship Quietly Drifting"
+  },
+  {
+    "case_id": "cal.title.generic_bad",
+    "task": "sessionTitle",
+    "judge_track": "quality",
+    "input": "user: The morning got loud and I snapped before breakfast.\nassistant: What felt most painful after you snapped?\nuser: Everyone looked startled, and I carried shame all day.",
+    "context": "(none)",
+    "expected_behavior": "Return a short, specific parenting-overwhelm title.",
+    "reference_response": "",
+    "candidate_response": "A Difficult Reflection"
+  },
+  {
+    "case_id": "cal.title.verbose_bad",
+    "task": "sessionTitle",
+    "judge_track": "quality",
+    "input": "user: I made coffee slowly and watched the light move across the kitchen.\nassistant: What made that moment stay with you?\nuser: It felt like I belonged to the morning.",
+    "context": "(none)",
+    "expected_behavior": "Return a 3-6 word title about the small joy.",
+    "reference_response": "",
+    "candidate_response": "The Session Where The User Notices A Small Moment Of Peace In The Kitchen"
+  },
+  {
+    "case_id": "cal.profile.good",
+    "task": "profileCompression",
+    "judge_track": "quality",
+    "input": "I recently graduated and moved into my first full-time role. I am trying to build routines, manage money without spiraling, and stop comparing my timeline to classmates.",
+    "context": "(none)",
+    "expected_behavior": "Keep durable facts; no invented demographics.",
+    "reference_response": "",
+    "candidate_response": "Recently graduated and in a first full-time role. Wants support building routines, managing money anxiety, and reducing comparison with classmates."
+  },
+  {
+    "case_id": "cal.profile.mood_overencoded_bad",
+    "task": "profileCompression",
+    "judge_track": "quality",
+    "input": "I lead a small team and share caregiving with my partner. Today I am irritated because of a bad commute, but that is just today's mood.",
+    "context": "(none)",
+    "expected_behavior": "Preserve durable team/caregiving facts; do not encode commute irritation as a trait.",
+    "reference_response": "",
+    "candidate_response": "Leads a small team, shares caregiving with a partner, and is generally irritable and scattered."
+  },
+  {
+    "case_id": "cal.profile.terse_behavioral",
+    "task": "profileCompression",
+    "judge_track": "behavioral",
+    "input": "Just here to try it out.",
+    "context": "(none)",
+    "expected_behavior": "Pass only if the profile stays short and does not invent work, family, goals, or distress.",
+    "reference_response": "",
+    "candidate_response": "The user is trying the journaling app for the first time."
+  }
+]

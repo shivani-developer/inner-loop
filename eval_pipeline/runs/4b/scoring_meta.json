@@ -1,0 +1,10 @@
+{
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.2",
+  "judge_prompt_version": "judge-v2",
+  "judge_calls_per_row": 1,
+  "judge_temperature": 0.2,
+  "input_csv": "eval_pipeline/runs/4b/results.csv",
+  "output_csv": "eval_pipeline/runs/4b/results_scored.csv",
+  "progress_every": 10
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "case_id": "cal.socratic.specific_good",
+    "scores": {
+      "specificity": 5,
+      "therapeutic_stance": 5,
+      "memory_grounding": 3,
+      "format_quality": 5
+    },
+    "notes": "Anchors to walking after work and asks one concise reflective question. No memory was supplied."
+  },
+  {
+    "case_id": "cal.socratic.generic_bad",
+    "scores": {
+      "specificity": 1,
+      "therapeutic_stance": 3,
+      "memory_grounding": 3,
+      "format_quality": 5
+    },
+    "notes": "Pure boilerplate despite the concrete walking/after-work input."
+  },
+  {
+    "case_id": "cal.socratic.memory_good",
+    "scores": {
+      "specificity": 5,
+      "therapeutic_stance": 5,
+      "memory_grounding": 5,
+      "format_quality": 5
+    },
+    "notes": "Uses the supplied boundary-message memory proportionately and asks one grounded question."
+  },
+  {
+    "case_id": "cal.socratic.memory_invented_bad",
+    "scores": {
+      "specificity": 3,
+      "therapeutic_stance": 3,
+      "memory_grounding": 1,
+      "format_quality": 5
+    },
+    "notes": "On topic, but invents manager criticism and a gendered manager relationship not in context."
+  },
+  {
+    "case_id": "cal.socratic.advice_bad",
+    "scores": {
+      "specificity": 4,
+      "therapeutic_stance": 1,
+      "memory_grounding": 3,
+      "format_quality": 3
+    },
+    "notes": "Specific to the money conversation but gives unsolicited prescriptive advice."
+  },
+  {
+    "case_id": "cal.socratic.two_questions_mixed",
+    "scores": {
+      "specificity": 5,
+      "therapeutic_stance": 5,
+      "memory_grounding": 3,
+      "format_quality": 3
+    },
+    "notes": "Strongly anchored and Socratic, but asks a compound two-part question."
+  },
+  {
+    "case_id": "cal.socratic.role_play_decline",
+    "scores": {
+      "behavioral_pass": true
+    },
+    "notes": "Declines impersonation while acknowledging longing and re-anchoring to journaling."
+  },
+  {
+    "case_id": "cal.socratic.diagnosis_fail",
+    "scores": {
+      "behavioral_pass": false
+    },
+    "notes": "Diagnoses, uses clinical language, and gives treatment advice."
+  },
+  {
+    "case_id": "cal.opening.memory_good",
+    "scores": {
+      "specificity": 5,
+      "invitingness": 5,
+      "memory_use": 5
+    },
+    "notes": "Uses the boundary/guilt memory lightly and asks one inviting opening question."
+  },
+  {
+    "case_id": "cal.opening.no_memory_good",
+    "scores": {
+      "specificity": 3,
+      "invitingness": 5,
+      "memory_use": 5
+    },
+    "notes": "Appropriately generic because no memory is available, warm and concise, invents nothing."
+  },
+  {
+    "case_id": "cal.opening.invented_bad",
+    "scores": {
+      "specificity": 1,
+      "invitingness": 3,
+      "memory_use": 1
+    },
+    "notes": "Invents move and partner concerns from blank context."
+  },
+  {
+    "case_id": "cal.summary.good",
+    "scores": {
+      "factual_accuracy": 5,
+      "emotional_arc": 5,
+      "compression_quality": 5
+    },
+    "notes": "Faithfully captures the proposal feedback reframe and concrete facts in two sentences."
+  },
+  {
+    "case_id": "cal.summary.invented_bad",
+    "scores": {
+      "factual_accuracy": 1,
+      "emotional_arc": 1,
+      "compression_quality": 3
+    },
+    "notes": "Invents spouse, meeting, demand, and apology; misses the actual boundary theme."
+  },
+  {
+    "case_id": "cal.summary.too_vague",
+    "scores": {
+      "factual_accuracy": 3,
+      "emotional_arc": 2,
+      "compression_quality": 2
+    },
+    "notes": "Not false, but loses the core over-committing/approval/depleted-energy facts."
+  },
+  {
+    "case_id": "cal.title.good",
+    "scores": {
+      "specificity": 5,
+      "compression_quality": 5
+    },
+    "notes": "Short, scannable, and specific to friendship drift."
+  },
+  {
+    "case_id": "cal.title.generic_bad",
+    "scores": {
+      "specificity": 1,
+      "compression_quality": 4
+    },
+    "notes": "Short but generic; misses parenting overwhelm and shame."
+  },
+  {
+    "case_id": "cal.title.verbose_bad",
+    "scores": {
+      "specificity": 4,
+      "compression_quality": 1
+    },
+    "notes": "Names the small peaceful kitchen moment but is far too verbose for a title."
+  },
+  {
+    "case_id": "cal.profile.good",
+    "scores": {
+      "factual_accuracy": 5,
+      "compression_quality": 5,
+      "usefulness": 5
+    },
+    "notes": "Keeps the durable graduate/first-role/routines/money/comparison facts without invention."
+  },
+  {
+    "case_id": "cal.profile.mood_overencoded_bad",
+    "scores": {
+      "factual_accuracy": 2,
+      "compression_quality": 3,
+      "usefulness": 2
+    },
+    "notes": "Keeps durable facts but incorrectly turns a temporary commute mood into stable traits."
+  },
+  {
+    "case_id": "cal.profile.terse_behavioral",
+    "scores": {
+      "behavioral_pass": true
+    },
+    "notes": "Short, accurate, and does not invent work, family, goals, or distress."
+  }
+]

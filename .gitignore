@@ -1,0 +1,63 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/
+!project.yml
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.moved-aside
+*.hmap
+*.ipa
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+
+# Local brainstorming previews
+.superpowers/
+CLAUDE.md
+
+# Python eval pipeline
+eval_pipeline/.venv/
+eval_pipeline/reports/
+eval_pipeline/**/__pycache__/
+eval_pipeline/.pytest_cache/
+
+# Python eval pipeline
+eval_pipeline/.venv/
+eval_pipeline/reports/
+eval_pipeline/**/__pycache__/
+eval_pipeline/.pytest_cache/
+
+.env.local
